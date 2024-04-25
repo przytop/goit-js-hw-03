@@ -2,9 +2,9 @@
 
 function filterArray(numbers, value) {
   const resultArray = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > value) {
-      resultArray.push(numbers[i]);
+  for (const i of numbers) {
+    if (i > value) {
+      resultArray.push(i);
     }
   }
   return resultArray;
